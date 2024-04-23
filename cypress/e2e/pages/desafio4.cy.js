@@ -20,7 +20,7 @@ describe('Login y mock de endpoint con POM', () => {
         registroPage.fillFormAndSubmit();
 
         loginPage.navigate()
-        loginPage.fillFormAndSubmit();
+        loginPage.fillFormAndSubmit('luzsq@ymail.com', '12345567');
 
         cy.wait('@getContacts');
 
